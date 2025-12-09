@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Pedra Papel Tesoura</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<div class="card">
+
+    <h2>Pedra, Papel e Tesoura</h2>
+
+    <input id="playerName" placeholder="Seu Nome">
+
+    <button onclick="createRoom()">Criar Novo Jogo</button>
+
+    <p style="text-align:center;">ou</p>
+
+    <input id="roomInput" placeholder="ID do Jogo para Entrar">
+    <button onclick="joinRoom()">Entrar em Jogo</button>
+
+    <p id="roomCode" style="font-weight:bold;"></p>
+
+    <hr>
+
+    <div id="gameArea" class="hidden">
+        <h3 id="players"></h3>
+
+        <button class="choice-btn" onclick="sendMove('pedra')">Pedra</button>
+        <button class="choice-btn" onclick="sendMove('papel')">Papel</button>
+        <button class="choice-btn" onclick="sendMove('tesoura')">Tesoura</button>
+
+        <h3 id="result"></h3>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
